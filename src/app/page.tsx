@@ -14,7 +14,35 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Personal OS Template",
+    title: "APE (Agri-Profit Engine)",
+    description:
+      "「勘と経験」に頼る農業経営を「物理とデータ」に基づく意思決定へ変革するツール。土壌・気象・市場データを統合し、その土地で最も利益が出る作物を提案するYield Gap Theoryに基づくシミュレーター。",
+    tags: ["Python", "Streamlit", "Data Science", "Agriculture"],
+    href: "/projects/ape",
+  },
+  {
+    title: "Market Price Intelligence",
+    description:
+      "競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
+    tags: ["SaaS Architecture", "BI Tool", "Market Analysis", "System Design"],
+    href: "/projects/market-price",
+  },
+  {
+    title: "Chefs Market Platform",
+    description:
+      "飲食店と卸売業者をつなぐ受発注プラットフォーム。FAXや電話が主流のアナログな発注業務をDXし、リアルタイムな在庫確認と発注ミスの削減を実現するBtoB SaaS構想。",
+    tags: ["Next.js", "Supabase", "BtoB SaaS", "DX"],
+    href: "/projects/chefs-market",
+  },
+  {
+    title: "Smart Fridge × Leaflet",
+    description:
+      "冷蔵庫の中身とスーパーの特売情報を自動マッチングさせる料理提案システム。在庫管理と節約レシピ提案を統合し、食品ロス削減と家計最適化を同時に実現するプロトタイプ。",
+    tags: ["IoT Concept", "Recipe Proposal", "Retail Tech", "Prototype"],
+    href: "/projects/smart-pantry",
+  },
+  {
+    title: "Personal OS",
     description:
       "人格と意思決定プロセスを外部化・構造化した自分専用のオペレーティングシステム。テンプレートとして公開中。",
     tags: ["Markdown", "Obsidian", "AI Agents", "Life Management"],
