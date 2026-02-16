@@ -107,7 +107,7 @@ export default function SmartPantryPage() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="https://smart-pantry-tracker-cnrflemev-kamomes-projects-668d3222.vercel.app" target="_blank">
+                <Link href="https://smart-pantry-tracker-nine.vercel.app/flyers" target="_blank">
                   <Button variant="primary" size="md">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     Live Demo
