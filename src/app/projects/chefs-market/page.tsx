@@ -120,12 +120,9 @@ export default function ChefsMarketPage() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="https://github.com/horaguchi/chefs-market" target="_blank">
-                  <Button variant="primary" size="md">
-                    <Github className="w-5 h-5 mr-2" />
-                    View Source
-                  </Button>
-                </Link>
+                <Button variant="secondary" size="md" className="opacity-60 cursor-not-allowed">
+                  🚧 Coming Soon
+                </Button>
               </div>
             </motion.div>
 
