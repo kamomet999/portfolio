@@ -20,6 +20,7 @@ import {
   Target,
   Zap,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const systemComponents = [
@@ -357,7 +358,7 @@ export default function PersonalOSPage() {
         </div>
       </section>
 
-      {/* Architecture Diagram Placeholder */}
+      {/* Folder Structure */}
       <section className="py-20 bg-navy-50/50">
         <div className="section-container">
           <motion.div
@@ -367,35 +368,27 @@ export default function PersonalOSPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
-              アーキテクチャ図
+              フォルダ構造
             </h2>
+            <p className="text-navy-600 max-w-2xl mx-auto">
+              12のカテゴリで「自分」を体系的に整理
+            </p>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
+            className="max-w-2xl mx-auto"
           >
-            <div className="bg-white rounded-2xl border border-navy-100 p-8 shadow-lg">
-              {/* Mermaid Diagram Placeholder */}
-              <div className="bg-navy-50 rounded-xl p-12 text-center">
-                <FileText className="w-16 h-16 text-navy-300 mx-auto mb-4" />
-                <p className="text-navy-500 mb-4">
-                  システム構成図（Mermaid / 画像）
-                </p>
-                <div className="text-sm text-navy-400 font-mono bg-navy-100 rounded-lg p-4 text-left max-w-md mx-auto">
-                  <pre>{`graph TD
-    A[Daily Logs] --> B[FileSystem (Markdown)]
-    C[Core Principles] --> B
-    B --> D{AI Agent / User}
-    D --> E[Decision Making]
-    E --> F[Action]
-    F --> A
-    D -- Review --> G[Update Core]
-    G --> C`}</pre>
-                </div>
-              </div>
+            <div className="bg-white rounded-2xl border border-navy-100 p-4 shadow-lg">
+              <Image
+                src="/personal-os-structure.png"
+                alt="Personal OS フォルダ構造"
+                width={800}
+                height={900}
+                className="rounded-xl w-full h-auto"
+              />
             </div>
           </motion.div>
         </div>
