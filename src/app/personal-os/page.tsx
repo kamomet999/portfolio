@@ -24,21 +24,21 @@ import Link from "next/link";
 
 const systemComponents = [
   {
-    icon: CheckSquare,
-    title: "Task Board",
-    description: "Notionベースのタスク管理。プロジェクト、期限、優先度で整理。",
-    color: "fresh",
-  },
-  {
-    icon: BookOpen,
-    title: "Diary / Reflection",
-    description: "日々の振り返りと学びの記録。パターンを発見し、改善につなげる。",
+    icon: FileText,
+    title: "Markdown Files",
+    description: "全てのデータをテキストファイルで管理。ベンダーロックインを排除し、AIが読みやすい形式に。",
     color: "navy",
   },
   {
-    icon: Cog,
-    title: "Automation",
-    description: "Pythonスクリプトによる自動集計・分析。手作業を最小化。",
+    icon: Brain,
+    title: "AI Agents",
+    description: "蓄積されたログと原則をAIが読み込み、あなたの「分身」として思考・判断を代行。",
+    color: "fresh",
+  },
+  {
+    icon: RefreshCw,
+    title: "Feedback Loop",
+    description: "「行動→記録→振り返り→原則の修正」のサイクルを回し、OS（人格）をアップデートし続ける。",
     color: "fresh",
   },
 ];
@@ -46,18 +46,18 @@ const systemComponents = [
 const dataFlow = [
   {
     icon: Database,
-    label: "Input",
-    items: ["日々のログ", "健康データ", "タスク完了記録", "学習記録"],
+    label: "Input (Logs)",
+    items: ["06_人生ログ (Daily)", "08_リスクと失敗", "10_自分史", "新しい経験・学び"],
   },
   {
-    icon: RefreshCw,
-    label: "Process",
-    items: ["自動集計", "パターン分析", "目標進捗計算", "レポート生成"],
+    icon: Brain,
+    label: "Process (AI/Me)",
+    items: ["01_コア・原則の参照", "04_判断ロジックの適用", "AIによるパターン認識", "月次・年次振り返り"],
   },
   {
     icon: Target,
-    label: "Output",
-    items: ["最適化タスクリスト", "週次レビュー", "行動指針", "改善提案"],
+    label: "Output (Decision)",
+    items: ["迷いのない意思決定", "09_振り返り (Update)", "行動指針の明確化", "自分固有のAIモデル"],
   },
 ];
 
@@ -386,11 +386,14 @@ export default function PersonalOSPage() {
                 </p>
                 <div className="text-sm text-navy-400 font-mono bg-navy-100 rounded-lg p-4 text-left max-w-md mx-auto">
                   <pre>{`graph TD
-    A[Daily Input] --> B[Notion]
-    B --> C[Python Scripts]
-    C --> D[Analysis]
-    D --> E[Optimized Tasks]
-    E --> A`}</pre>
+    A[Daily Logs] --> B[FileSystem (Markdown)]
+    C[Core Principles] --> B
+    B --> D{AI Agent / User}
+    D --> E[Decision Making]
+    E --> F[Action]
+    F --> A
+    D -- Review --> G[Update Core]
+    G --> C`}</pre>
                 </div>
               </div>
             </div>
@@ -478,15 +481,6 @@ export default function PersonalOSPage() {
               <Link href="/#contact">
                 <Button variant="primary" size="lg">
                   お問い合わせ
-                </Button>
-              </Link>
-              <Link href="/projects/ape">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-white text-white hover:bg-white hover:text-navy-900"
-                >
-                  APEプロジェクトを見る
                 </Button>
               </Link>
             </div>
