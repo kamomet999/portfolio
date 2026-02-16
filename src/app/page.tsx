@@ -41,13 +41,7 @@ const projects = [
     tags: ["IoT Concept", "Recipe Proposal", "Retail Tech", "Prototype"],
     href: "/projects/smart-pantry",
   },
-  {
-    title: "Mercari AI Listing Assistant",
-    description:
-      "フリマアプリ出品時の画像をAIが解析し、「売れる写真」かどうかを判定するツール。構図・明るさ・情報の視認性をスコアリングし、高値での売却をサポートする個人開発ツール。",
-    tags: ["Python", "OpenCV", "Machine Learning", "Automation"],
-    href: "/projects/mercari-assistant",
-  },
+
   {
     title: "Personal OS \"Taiki\"",
     description:

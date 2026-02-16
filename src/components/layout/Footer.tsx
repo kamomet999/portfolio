@@ -1,28 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import Link from "next/link";
 
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/horaguchi",
+    href: "https://github.com/taiki-horaguchi-alt",
     icon: Github,
   },
   {
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/horaguchi",
-    icon: Linkedin,
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/horaguchi",
-    icon: Twitter,
-  },
-  {
     name: "Email",
-    href: "mailto:contact@example.com",
+    href: "mailto:taiki-horaguchi@kamomet.com",
     icon: Mail,
   },
 ];
