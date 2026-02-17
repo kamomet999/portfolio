@@ -22,22 +22,6 @@ const projects = [
     imageUrl: "https://placehold.co/600x400/2d6a4f/ffffff?text=APE+(Agri-Profit)",
   },
   {
-    title: "Market Price Intelligence",
-    description:
-      "競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
-    tags: ["SaaS Architecture", "BI Tool", "Market Analysis", "System Design"],
-    href: "/projects/market-price",
-    imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Market+Price+BI",
-  },
-  {
-    title: "Chefs Market Platform",
-    description:
-      "飲食店と卸売業者をつなぐ受発注プラットフォーム。FAXや電話が主流のアナログな発注業務をDXし、リアルタイムな在庫確認と発注ミスの削減を実現するBtoB SaaS構想。",
-    tags: ["Next.js", "Supabase", "BtoB SaaS", "DX"],
-    href: "/projects/chefs-market",
-    imageUrl: "https://placehold.co/600x400/e85d04/ffffff?text=Chefs+Market",
-  },
-  {
     title: "Smart Fridge × Leaflet",
     description:
       "冷蔵庫の中身とスーパーの特売情報を自動マッチングさせる料理提案システム。在庫管理と節約レシピ提案を統合し、食品ロス削減と家計最適化を同時に実現するプロトタイプ。",
@@ -52,6 +36,22 @@ const projects = [
     tags: ["Markdown", "Obsidian", "AI Agents", "Life Management"],
     href: "/personal-os",
     imageUrl: "/personal-os-structure.png",
+  },
+  {
+    title: "Market Price Intelligence",
+    description:
+      "【準備中 / Planning】競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
+    tags: ["SaaS Architecture", "BI Tool", "Market Analysis", "System Design"],
+    href: "/projects/market-price",
+    imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Market+Price+BI",
+  },
+  {
+    title: "Chefs Market Platform",
+    description:
+      "【準備中 / Planning】飲食店と卸売業者をつなぐ受発注プラットフォーム。FAXや電話が主流のアナログな発注業務をDXし、リアルタイムな在庫確認と発注ミスの削減を実現するBtoB SaaS構想。",
+    tags: ["Next.js", "Supabase", "BtoB SaaS", "DX"],
+    href: "/projects/chefs-market",
+    imageUrl: "https://placehold.co/600x400/e85d04/ffffff?text=Chefs+Market",
   },
 ];
 
