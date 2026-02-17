@@ -19,6 +19,7 @@ const projects = [
       "「勘と経験」に頼る農業経営を「物理とデータ」に基づく意思決定へ変革するツール。土壌・気象・市場データを統合し、その土地で最も利益が出る作物を提案するYield Gap Theoryに基づくシミュレーター。",
     tags: ["Python", "Streamlit", "Data Science", "Agriculture"],
     href: "/projects/ape",
+    imageUrl: "https://placehold.co/600x400/2d6a4f/ffffff?text=APE+(Agri-Profit)",
   },
   {
     title: "Market Price Intelligence",
@@ -26,6 +27,7 @@ const projects = [
       "競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
     tags: ["SaaS Architecture", "BI Tool", "Market Analysis", "System Design"],
     href: "/projects/market-price",
+    imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Market+Price+BI",
   },
   {
     title: "Chefs Market Platform",
@@ -33,6 +35,7 @@ const projects = [
       "飲食店と卸売業者をつなぐ受発注プラットフォーム。FAXや電話が主流のアナログな発注業務をDXし、リアルタイムな在庫確認と発注ミスの削減を実現するBtoB SaaS構想。",
     tags: ["Next.js", "Supabase", "BtoB SaaS", "DX"],
     href: "/projects/chefs-market",
+    imageUrl: "https://placehold.co/600x400/e85d04/ffffff?text=Chefs+Market",
   },
   {
     title: "Smart Fridge × Leaflet",
@@ -40,6 +43,7 @@ const projects = [
       "冷蔵庫の中身とスーパーの特売情報を自動マッチングさせる料理提案システム。在庫管理と節約レシピ提案を統合し、食品ロス削減と家計最適化を同時に実現するプロトタイプ。",
     tags: ["IoT Concept", "Recipe Proposal", "Retail Tech", "Prototype"],
     href: "/projects/smart-pantry",
+    imageUrl: "https://placehold.co/600x400/0ea5e9/ffffff?text=Smart+Fridge",
   },
   {
     title: "Personal OS",
@@ -47,6 +51,7 @@ const projects = [
       "人格と意思決定プロセスを外部化・構造化した自分専用のオペレーティングシステム。テンプレートとして公開中。",
     tags: ["Markdown", "Obsidian", "AI Agents", "Life Management"],
     href: "/personal-os",
+    imageUrl: "/personal-os-structure.png",
   },
 ];
 
