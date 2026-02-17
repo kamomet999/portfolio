@@ -303,10 +303,10 @@ export default function Home() {
               新しいプロジェクトやコラボレーションの機会について、
               お気軽にお問い合わせください。
             </p>
-            <Link href="mailto:contact@example.com">
+            <Link href="mailto:taiki-horaguchi@kamomet.com">
               <Button variant="primary" size="lg">
                 <Mail className="w-5 h-5 mr-2" />
-                Get in Touch
+                taiki-horaguchi@kamomet.com
               </Button>
             </Link>
           </motion.div>
