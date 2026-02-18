@@ -218,7 +218,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg border border-white/20">
                     <Sparkles className="w-4 h-4 text-fresh-300" />
-                    <span className="text-white font-medium">Cursor</span>
+                    <span className="text-white font-medium">Antigravity</span>
                   </div>
                 </div>
                 <p className="text-navy-300 text-sm mt-4">
