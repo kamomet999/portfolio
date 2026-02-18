@@ -19,15 +19,15 @@ const projects = [
       "「勘と経験」に頼る農業経営を「物理とデータ」に基づく意思決定へ変革するツール。土壌・気象・市場データを統合し、その土地で最も利益が出る作物を提案するYield Gap Theoryに基づくシミュレーター。",
     tags: ["Python", "Streamlit", "Data Science", "Agriculture"],
     href: "/projects/ape",
-    imageUrl: "https://placehold.co/600x400/2d6a4f/ffffff?text=APE+(Agri-Profit)",
+    imageUrl: "/previews/ape.svg",
   },
   {
-    title: "Smart Fridge × Leaflet",
+    title: "ごはんナビ (Smart Pantry Tracker)",
     description:
-      "冷蔵庫の中身とスーパーの特売情報を自動マッチングさせる料理提案システム。在庫管理と節約レシピ提案を統合し、食品ロス削減と家計最適化を同時に実現するプロトタイプ。",
-    tags: ["IoT Concept", "Recipe Proposal", "Retail Tech", "Prototype"],
+      "冷蔵庫の中身をAIで管理し、チラシ価格比較・レシピ提案・買い物リスト生成まで一括で行うキッチン管理アプリ。Google Gemini 2.5による画像認識で食材を自動登録。",
+    tags: ["Next.js 16", "Google Gemini AI", "PostgreSQL", "Vercel"],
     href: "/projects/smart-pantry",
-    imageUrl: "https://placehold.co/600x400/0ea5e9/ffffff?text=Smart+Fridge",
+    imageUrl: "/previews/gohan-navi.svg",
   },
   {
     title: "Personal OS",
@@ -43,7 +43,7 @@ const projects = [
       "【準備中 / Planning】競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
     tags: ["SaaS Architecture", "BI Tool", "Market Analysis", "System Design"],
     href: "/projects/market-price",
-    imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Market+Price+BI",
+    imageUrl: "/previews/market-price.svg",
   },
   {
     title: "Chefs Market Platform",
@@ -51,7 +51,7 @@ const projects = [
       "【準備中 / Planning】飲食店と卸売業者をつなぐ受発注プラットフォーム。FAXや電話が主流のアナログな発注業務をDXし、リアルタイムな在庫確認と発注ミスの削減を実現するBtoB SaaS構想。",
     tags: ["Next.js", "Supabase", "BtoB SaaS", "DX"],
     href: "/projects/chefs-market",
-    imageUrl: "https://placehold.co/600x400/e85d04/ffffff?text=Chefs+Market",
+    imageUrl: "/previews/chefs-market.svg",
   },
 ];
 
@@ -218,7 +218,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg border border-white/20">
                     <Sparkles className="w-4 h-4 text-fresh-300" />
-                    <span className="text-white font-medium">Antigravity</span>
+                    <span className="text-white font-medium">Cursor</span>
                   </div>
                 </div>
                 <p className="text-navy-300 text-sm mt-4">
@@ -261,7 +261,7 @@ export default function Home() {
         <div className="section-container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "3+", label: "Projects Shipped" },
+              { value: "2+", label: "Projects Shipped" },
               { value: "2+", label: "Years Learning" },
               { value: "5+", label: "Technologies" },
               { value: "∞", label: "Curiosity" },
@@ -315,3 +315,4 @@ export default function Home() {
     </>
   );
 }
+
