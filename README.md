@@ -1,29 +1,32 @@
 # Taiki Horaguchi Portfolio
 
-転職活動用ポートフォリオサイト。「ビジネス × テクノロジー × 現場感」をアピールするモダンなWebサイト。
+テクノロジーと現場経験を掛け合わせた取り組みを紹介するポートフォリオサイト。
+
+🔗 **Live:** [portfolio1-chi-rouge.vercel.app](https://portfolio1-chi-rouge.vercel.app)
 
 ## Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animation**: Framer Motion
-- **Icons**: Lucide React
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Icons:** Lucide React
+
+## Projects
+
+### 🌾 APE (Agricultural Price Engine)
+農産物の価格予測と営農支援シミュレーター。市場データ・気象データを組み合わせ、農家の経営判断を支援します。
+
+### 🧠 Personal OS
+AIが「自分ならどう判断するか」を再現するための人格OS。意思決定の外部化と自動化を目指すフレームワーク。
+
+### 🛒 Smart Pantry Tracker
+飲食店向けの在庫管理 & チラシ配信プラットフォーム。Next.js + Supabase で構築。
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js 18.17 以上
-- npm または yarn
-
-### Installation
-
 ```bash
-# 依存関係のインストール
 npm install
-
-# 開発サーバーの起動
 npm run dev
 ```
 
@@ -37,114 +40,14 @@ src/
 │   ├── layout.tsx          # ルートレイアウト
 │   ├── page.tsx            # ランディングページ
 │   ├── globals.css         # グローバルスタイル
-│   ├── projects/
-│   │   └── ape/
-│   │       └── page.tsx    # APEプロジェクト詳細
-│   └── personal-os/
-│       └── page.tsx        # Personal OS詳細
+│   └── projects/
+│       ├── ape/page.tsx    # APE 詳細
+│       └── personal-os/page.tsx  # Personal OS 詳細
 ├── components/
-│   ├── ui/
-│   │   ├── Button.tsx      # ボタンコンポーネント
-│   │   └── ProjectCard.tsx # プロジェクトカード
-│   └── layout/
-│       ├── Navbar.tsx      # ナビゲーションバー
-│       └── Footer.tsx      # フッター
+│   ├── ui/                 # UIコンポーネント
+│   └── layout/             # レイアウトコンポーネント
 └── lib/
-    └── utils.ts            # ユーティリティ関数
-```
-
-## Design System
-
-### Colors
-
-- **Primary (Navy)**: `#0f172a` - 知的さ、信頼
-- **Accent (Fresh Green)**: `#22c55e` - 農業、成長
-- **Background**: White / Light Gray - 清潔感
-
-### Typography
-
-- **Font**: Inter (Google Fonts)
-
-## Deployment to Vercel
-
-### Method 1: Vercel CLI
-
-```bash
-# Vercel CLIのインストール
-npm i -g vercel
-
-# デプロイ
-vercel
-```
-
-### Method 2: GitHub Integration (推奨)
-
-1. GitHubにリポジトリをプッシュ
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/your-username/portfolio.git
-git push -u origin main
-```
-
-2. [Vercel](https://vercel.com) にアクセス
-3. "New Project" をクリック
-4. GitHubリポジトリをインポート
-5. 設定はデフォルトのままで "Deploy" をクリック
-
-### Environment Variables
-
-このプロジェクトでは環境変数は不要です。
-
-### Custom Domain (Optional)
-
-1. Vercelダッシュボードでプロジェクトを選択
-2. "Settings" → "Domains"
-3. カスタムドメインを追加
-4. DNSレコードを設定
-
-## Development
-
-### Available Scripts
-
-```bash
-# 開発サーバー
-npm run dev
-
-# プロダクションビルド
-npm run build
-
-# プロダクションサーバー
-npm run start
-
-# Lint
-npm run lint
-```
-
-### Adding New Projects
-
-1. `src/app/projects/[project-name]/page.tsx` を作成
-2. `src/app/page.tsx` の `projects` 配列に追加
-
-## Customization
-
-### Update Personal Information
-
-- `src/app/layout.tsx` - メタデータ
-- `src/components/layout/Footer.tsx` - SNSリンク
-- `src/app/page.tsx` - プロフィール情報
-
-### Change Colors
-
-`tailwind.config.ts` で色を変更:
-
-```ts
-colors: {
-  navy: { ... },
-  fresh: { ... },
-}
+    └── utils.ts            # ユーティリティ
 ```
 
 ## License
