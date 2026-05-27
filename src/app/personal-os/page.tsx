@@ -171,7 +171,7 @@ export default function PersonalOSPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <Link href="https://github.com/taiki-horaguchi-alt/personal-os" target="_blank">
+              <Link href="https://github.com/kamomet999/personal-os" target="_blank">
                 <Button variant="primary" size="lg">
                   <Github className="w-5 h-5 mr-2" />
                   View on GitHub

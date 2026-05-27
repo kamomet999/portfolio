@@ -110,7 +110,7 @@ export default function APEProjectPage() {
                 {/* View Source - Conditional Rendering */}
                 {/* TODO: Set this variable to the repository URL when available. If undefined/null, "Coming Soon" will be displayed. */}
                 {(() => {
-                  const sourceUrl = "https://github.com/taiki-horaguchi-alt/APE";
+                  const sourceUrl = "https://github.com/kamomet999/APE";
                   
                   return sourceUrl ? (
                     <Link href={sourceUrl} target="_blank">

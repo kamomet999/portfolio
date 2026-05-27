@@ -71,7 +71,7 @@ export const Hero = () => {
               </Button>
             </Link>
             <Link
-              href="https://github.com/taiki-horaguchi-alt/smart-pantry-tracker"
+              href="https://github.com/kamomet999/smart-pantry-tracker"
               target="_blank"
             >
               <Button
