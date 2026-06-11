@@ -38,14 +38,6 @@ const projects = [
     imageUrl: "/personal-os-structure.png",
   },
   {
-    title: "王国防衛戦 (Tower Defense Game)",
-    description:
-      "千年戦争アイギスにインスパイアされたブラウザで遊べるタワーディフェンスゲーム。近接ユニットのブロックシステム、コスト回復制、撤退によるコスト返還など本格的なゲームシステムをCanvas APIで実装。",
-    tags: ["TypeScript", "Canvas API", "Game Dev", "React"],
-    href: "/games/tower-defense",
-    imageUrl: "/previews/tower-defense.svg",
-  },
-  {
     title: "Market Price Intelligence",
     description:
       "【準備中 / Planning】競合店のチラシ相場を自動収集・分析するSaaS型BIツール。マルチテナント設計によるデータ分離と、4P分析に基づくマーケティング戦略支援機能を備えた高度な競合分析プラットフォーム。",
