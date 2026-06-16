@@ -22,6 +22,14 @@ const projects = [
     imageUrl: "/previews/ape.svg",
   },
   {
+    title: "いぬねこ図鑑 (Idle Pet Game)",
+    description:
+      "スマホで「ながら世話」する犬・猫の放置型育成アプリ。閉じている間も時間が進み、戻ると空腹・成長・コインが待っている。オフライン進行＋放置報酬・成長段階・図鑑コレクションを実装したPWA。",
+    tags: ["JavaScript", "PWA", "Game Dev", "Mobile"],
+    href: "/projects/dog-cat",
+    imageUrl: "/previews/dog-cat.png",
+  },
+  {
     title: "ごはんナビ (Smart Pantry Tracker)",
     description:
       "冷蔵庫の中身をAIで管理し、チラシ価格比較・レシピ提案・買い物リスト生成まで一括で行うキッチン管理アプリ。Google Gemini 2.5による画像認識で食材を自動登録。",
@@ -261,7 +269,7 @@ export default function Home() {
         <div className="section-container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "2+", label: "Projects Shipped" },
+              { value: "3+", label: "Projects Shipped" },
               { value: "2+", label: "Years Learning" },
               { value: "5+", label: "Technologies" },
               { value: "∞", label: "Curiosity" },
