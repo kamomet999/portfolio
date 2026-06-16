@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import {
   ArrowLeft,
   BookOpen,
+  ExternalLink,
   Github,
   PawPrint,
   PhoneOff,
@@ -106,6 +107,16 @@ export default function DogCatProjectPage() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
+                <Link
+                  href="https://kamomet999.github.io/dog_cat/app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="primary" size="md">
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    遊んでみる
+                  </Button>
+                </Link>
                 <Link
                   href="https://github.com/kamomet999/dog_cat"
                   target="_blank"
@@ -314,11 +325,25 @@ export default function DogCatProjectPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="https://github.com/kamomet999/dog_cat"
+                href="https://kamomet999.github.io/dog_cat/app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button variant="primary" size="lg">
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  遊んでみる
+                </Button>
+              </Link>
+              <Link
+                href="https://github.com/kamomet999/dog_cat"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-white text-white hover:bg-white hover:text-navy-900"
+                >
                   <Github className="w-5 h-5 mr-2" />
                   ソースを見る
                 </Button>
