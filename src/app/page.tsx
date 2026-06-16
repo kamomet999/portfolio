@@ -22,10 +22,10 @@ const projects = [
     imageUrl: "/previews/ape.svg",
   },
   {
-    title: "いぬねこ図鑑 (Idle Pet Game)",
+    title: "いぬねこ図鑑 (スマホ断ち × 育成)",
     description:
-      "スマホで「ながら世話」する犬・猫の放置型育成アプリ。閉じている間も時間が進み、戻ると空腹・成長・コインが待っている。オフライン進行＋放置報酬・成長段階・図鑑コレクションを実装したPWA。",
-    tags: ["JavaScript", "PWA", "Game Dev", "Mobile"],
+      "「スマホを離れるほど、いぬねこが育つ」デジタルデトックス×ペット育成アプリ。スマホを見ない時間がエサになり、赤ちゃんをお迎えして成体まで育てて巣立たせ、犬・猫の図鑑（各30種〜）を集める。Capacitorで iOS/Android 対応。",
+    tags: ["JavaScript", "Capacitor", "iOS / Android", "Digital Wellbeing"],
     href: "/projects/dog-cat",
     imageUrl: "/previews/dog-cat.png",
   },

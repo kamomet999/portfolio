@@ -4,49 +4,48 @@ import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
-  Clock,
-  Gamepad2,
+  BookOpen,
   Github,
   PawPrint,
+  PhoneOff,
   Smartphone,
   Sparkles,
-  Trophy,
 } from "lucide-react";
 import Link from "next/link";
 
 const features = [
   {
-    icon: Clock,
-    title: "オフライン進行＋放置報酬",
+    icon: PhoneOff,
+    title: "スマホを置くほど育つ",
     description:
-      "アプリを閉じている間も時間が進行。戻ると空腹・成長・コインの変化が待っている放置ゲームの肝を実装。",
+      "スマホを見ない時間が、そのままこの子の「ごはん」になる。デジタルデトックスをそのまま育成のごほうびに変える独自ルール。",
   },
   {
     icon: PawPrint,
-    title: "4ステータスの世話",
+    title: "赤ちゃんをお迎え → 巣立ち",
     description:
-      "「ごはん・あそぶ・おそうじ・ねんね」で時間減衰するステータスをケア。ながら世話で育てる。",
+      "ねんね中の赤ちゃんをお迎えし、おくるみ→赤ちゃん→子ども→成体へ。育てたら巣立たせ、また新しい子を迎える。",
   },
   {
-    icon: Trophy,
-    title: "成長段階 ＆ 図鑑コレクション",
+    icon: BookOpen,
+    title: "図鑑コレクション",
     description:
-      "たまご→成長段階を経て育成。犬・猫を集めて図鑑（ずかん）を埋めていく収集要素。",
+      "犬・猫それぞれ30種〜。性格の違う子を育てて巣立たせ、図鑑に殿堂入り。広告ゼロ・登録なしで気軽に。",
   },
   {
     icon: Smartphone,
-    title: "PWA（インストール不要）",
+    title: "iOS / Android ネイティブ",
     description:
-      "ブラウザでそのまま遊べてオフラインでも動作。審査なしで即公開・即検証できる構成。",
+      "Capacitorで両OSのネイティブアプリ化。ローカル通知と触覚フィードバックで、ふと戻りたくなる体験に。",
   },
 ];
 
 const techStack = [
   { name: "JavaScript", category: "Language" },
-  { name: "PWA", category: "Platform" },
-  { name: "HTML5 / CSS3", category: "Markup" },
-  { name: "Service Worker", category: "Offline" },
-  { name: "LocalStorage", category: "State" },
+  { name: "Capacitor", category: "iOS / Android" },
+  { name: "Local Notifications", category: "Native" },
+  { name: "HTML5 / CSS3", category: "UI" },
+  { name: "PWA", category: "Web" },
 ];
 
 export default function DogCatProjectPage() {
@@ -83,24 +82,26 @@ export default function DogCatProjectPage() {
             >
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-fresh-100 rounded-full text-fresh-700 text-sm font-medium mb-4">
-                <Gamepad2 className="w-4 h-4" />
-                Idle Game × PWA
+                <Sparkles className="w-4 h-4" />
+                Digital Wellbeing × 育成
               </div>
 
               <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
                 いぬねこ図鑑
                 <span className="block text-lg md:text-xl font-normal text-navy-600 mt-2">
-                  Inuneko Zukan — 放置型ペット育成
+                  Inuneko Dex — スマホを置くほど育つ
                 </span>
               </h1>
 
               <p className="text-xl text-fresh-600 font-medium mb-6">
-                スマホで「ながら世話」する放置型ペット育成アプリ
+                スマホを離れるほど、いぬねこが育つ。
               </p>
 
               <p className="text-navy-600 leading-relaxed mb-8">
-                閉じている間も時間が進み、戻ると「お腹が空いた・成長した・コインが貯まった」が待っている。
-                犬・猫を選んで育て、図鑑を埋めていくPWA。アイデアを仕様に落とし、AIと協働して0→1で形にしました。
+                スマホを見ない時間が、そのままこの子の「ごはん」になる育成アプリ。
+                ねんね中の赤ちゃんをお迎えし、おくるみ→赤ちゃん→子ども→成体へ。
+                巣立たせて図鑑（犬・猫 各30種〜）を集める。広告ゼロ・登録なし。
+                アイデアを仕様に落とし、AIと協働して0→1で形にしました。
               </p>
 
               {/* CTA Buttons */}
@@ -142,11 +143,11 @@ export default function DogCatProjectPage() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-fresh-100 flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-fresh-600" />
+                    <PhoneOff className="w-5 h-5 text-fresh-600" />
                   </div>
                   <div>
-                    <div className="text-lg font-bold text-navy-900">オフライン進行</div>
-                    <div className="text-xs text-navy-500">閉じても育つ</div>
+                    <div className="text-lg font-bold text-navy-900">置くほど育つ</div>
+                    <div className="text-xs text-navy-500">スマホ断ち × 育成</div>
                   </div>
                 </div>
               </motion.div>
@@ -171,19 +172,19 @@ export default function DogCatProjectPage() {
               <ul className="space-y-3 text-fresh-800">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-fresh-500 mt-2" />
-                  たまごを選んで、犬か猫を育てる
+                  スマホを置くと「エサ」が貯まり、いぬねこが育つ
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-fresh-500 mt-2" />
-                  すきま時間に世話するだけのゆるい設計
+                  赤ちゃんをお迎えし、成体まで育てて巣立たせる
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-fresh-500 mt-2" />
-                  放置中も成長し、戻ると変化が待っている
+                  読書・運動・勉強の"おとも"に。画面から離れる時間を楽しく
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-fresh-500 mt-2" />
-                  集めて図鑑を埋めるコレクション性
+                  集めて図鑑を埋めるコレクション性（広告ゼロ・登録なし）
                 </li>
               </ul>
             </motion.div>
@@ -196,19 +197,19 @@ export default function DogCatProjectPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="p-8 rounded-2xl bg-navy-50 border border-navy-100"
             >
-              <h3 className="text-xl font-bold text-navy-900 mb-4">実装のこだわり</h3>
+              <h3 className="text-xl font-bold text-navy-900 mb-4">こだわり</h3>
               <ul className="space-y-3 text-navy-700">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-navy-400 mt-2" />
-                  放置ゲームの肝＝オフライン進行の時間計算を単体で設計
+                  「スマホを使わない時間」を報酬に変える独自ルール設計
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-navy-400 mt-2" />
-                  端末時計の巻き戻りを検知し放置報酬の不正を抑止
+                  おくるみ→赤ちゃん→子ども→成体の成長と放置時間の計算
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-navy-400 mt-2" />
-                  engine / art / ui / breeds に責務分割した構成
+                  Capacitorで iOS / Android ネイティブ化（通知・触覚）
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-navy-400 mt-2" />
@@ -231,7 +232,7 @@ export default function DogCatProjectPage() {
           >
             <h2 className="text-3xl font-bold text-navy-900 mb-4">主な機能</h2>
             <p className="text-navy-600 max-w-2xl mx-auto">
-              「ながら世話」で続く、放置型育成の体験を支える機能
+              「スマホを置くほど育つ」体験を支える機能
             </p>
           </motion.div>
 
