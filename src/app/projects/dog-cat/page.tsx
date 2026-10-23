@@ -6,12 +6,12 @@ import {
   ArrowLeft,
   BookOpen,
   ExternalLink,
-  Github,
   PawPrint,
   PhoneOff,
   Smartphone,
   Sparkles,
 } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Link from "next/link";
 
 const features = [
@@ -191,7 +191,7 @@ export default function DogCatProjectPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-fresh-500 mt-2" />
-                  読書・運動・勉強の"おとも"に。画面から離れる時間を楽しく
+                  読書・運動・勉強の&ldquo;おとも&rdquo;に。画面から離れる時間を楽しく
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-fresh-500 mt-2" />

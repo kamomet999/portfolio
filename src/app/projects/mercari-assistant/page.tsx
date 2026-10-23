@@ -9,7 +9,6 @@ import {
   Camera,
   CheckCircle,
   ExternalLink,
-  Github,
   ImageIcon,
   Lightbulb,
   Sparkles,
@@ -18,6 +17,7 @@ import {
   Upload,
   Zap,
 } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Link from "next/link";
 
 // TODO: Update these URLs when projects are published

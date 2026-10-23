@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Link from "next/link";
 
 const socialLinks = [
