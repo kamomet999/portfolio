@@ -12,7 +12,6 @@ import {
   Cog,
   Database,
   FileText,
-  Github,
   Heart,
   LineChart,
   RefreshCw,
@@ -20,6 +19,7 @@ import {
   Target,
   Zap,
 } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Image from "next/image";
 import Link from "next/link";
 

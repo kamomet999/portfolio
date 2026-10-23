@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Github, Sparkles } from "lucide-react";
+import { ArrowLeft, ExternalLink, Sparkles } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Link from "next/link";
 
 export const Hero = () => {

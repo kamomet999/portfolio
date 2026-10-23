@@ -8,7 +8,6 @@ import {
   Building2,
   Database,
   ExternalLink,
-  Github,
   Layers,
   LineChart,
   Search,
@@ -16,6 +15,7 @@ import {
   Target,
   TrendingUp,
 } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Link from "next/link";
 
 // TODO: Update these URLs when projects are published

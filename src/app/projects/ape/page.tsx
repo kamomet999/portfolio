@@ -9,11 +9,11 @@ import {
   Database,
   ExternalLink,
   FileText,
-  Github,
   Leaf,
   LineChart,
   TrendingUp,
 } from "lucide-react";
+import { Github } from "@/components/icons/Github";
 import Link from "next/link";
 
 const features = [

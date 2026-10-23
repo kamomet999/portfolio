@@ -7,7 +7,6 @@ import {
   Building2,
   CheckCircle,
   FileText,
-  Github,
   MessageSquare,
   Package,
   Phone,
